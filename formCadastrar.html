@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar</title>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        
+        <!-- Container abrigará o logotipo do sistema -->
+        <div class="container-fluid text-center" style="margin-top: 30px;">
+            <h1>Aqui ficará o logo do sistema</h1>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: black; margin-bottom: 30px;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="formLogin.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="carrinho.html">Carrinho</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Pesquisar">
+                  <button class="btn btn-primary" type="button">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+
+        <!-- Container que abrigará o conteúdo da página -->
+
+        <div class="container text-center" style="margin-top: 30px; margin-bottom: 30px;">
+            <h1>Cadastrar-se</h1>
+
+            <form action="#" method="post" class="was-validated">
+                <div class="row">
+                    <div class="form-floating mb-3 mt-3 col">
+                        <input type="text" class="form-control" name="nomeUsuario" placeholder="Informe o Nome Completo" required>
+                        <label for="nomeUsuario" class="ms-3">Nome completo</label>
+                    </div>
+
+                    <div class="form-floating mb-3 mt-3 col">
+                        <input type="number" class="form-control" name="cpfUsuario" placeholder="Informe o CPF" required>
+                        <label for="cpfUsuario" class="ms-3">CPF</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-floating mb-3 mt-3 col">
+                        <input type="date" class="form-control" name="datNascUsuario" placeholder="Informe a Data de Nascimento" required>
+                        <label for="datNascUsuario" class="ms-3">Data de nascimento</label>
+                    </div>
+
+                    <div class="form-floating mb-3 mt-3 col">
+                        <input type="number" class="form-control" name="telefoneUsuario" placeholder="Informe o Telefone Celular" required>
+                        <label for="telefoneUsuario" class="ms-3">Telefone celular</label>
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3 mt-3 col">
+                    <input type="email" class="form-control" name="emailUsuario" placeholder="Informe o Email" required>
+                    <label for="emailUsuario" class="ms-3">Email</label>
+                </div>
+
+                <div class="row">
+                    <div class="form-floating mb-3 mt-3 col">
+                        <input type="password" class="form-control" name="criarSenhaUsuario" placeholder="Crie uma senha" required>
+                        <label for="criarSenhaUsuario" class="ms-3">Crie sua senha</label>
+                    </div>
+
+                    <div class="form-floating mb-3 mt-3 col">
+                        <input type="password" class="form-control" name="confirmarSenhaUsuario" placeholder="Confirme sua senha" required>
+                        <label for="confirmarSenhaUsuario" class="ms-3">Confirme sua senha</label>
+                    </div>
+                </div>
+
+                <button type="submit" name="btCadastrar" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+
+
+        <!-- Rodapé da página -->
+        <div class="container-fluid text-center fixed-bottom text-light " style="background-color: black;">
+            <p>Interfaces Desenvolvidas por
+                <b>
+                    <a href="mailto:daarky15@hotmail.com?subject=Tecnologias Web">
+                        daarky15@gmail.com
+                    </a>
+                </b>
+            </p>
+        </div>
+
+    </body>
+</html>
