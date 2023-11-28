@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial</title>
+            <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Container abrigará o logotipo do sistema -->
+         <div class="container-fluid text-center" style="margin-top: 30px;">
+            <h1>Aqui ficará o logo do sistema</h1>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: black; margin-bottom: 30px;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="formLogin.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="carrinho.html">Carrinho</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Pesquisar">
+                  <button class="btn btn-primary" type="button">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+
+        <!-- Tabela de Compras do Carrinho -->
+         
+        <div class="container mt-3">
+            <h2>Carrinho de Compras</h2>
+            <p>Informações dos produtos e finalização da compra:</p>
+            <table class="table">
+              <thead class="table-dark">
+                <tr>
+                  <th>Produto</th>
+                  <th>Tipo</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>RX 6750</td>
+                  <td>Placa de Vídeo</td>
+                  <td>R$1.939,99</td>
+                </tr>
+                <tr>
+                  <td>Headset Could Stinger</td>
+                  <td>Headset</td>
+                  <td>R$369,99</td>
+                </tr>
+                <tr>
+                  <td>Redragon Mitra</td>
+                  <td>Teclado</td>
+                  <td>R$301,91</td>
+                </tr>
+              </tbody>
+            </table>
+
+        <!-- Total dos Produtos e Finalizar Compra -->
+        
+        <a href="#" class="btn btn-success">Finalizar Compra</a>
+        Total dos produtos: <strong>R$ 2611.89</strong>
+
+        <!-- Rodapé da página -->
+        <div class="container-fluid text-center fixed-bottom text-light " style="background-color: black;">
+            <p>Interfaces Desenvolvidas por
+                <b>
+                    <a href="mailto:daarky15@hotmail.com?subject=Tecnologias Web">
+                        daarky15@gmail.com
+                    </a>
+                </b>
+            </p>
+        </div>
+
+    </body>
+
+</html>
