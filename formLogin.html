@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <!-- Latest compiled and minified CSS -->
+        <title>Página Inicial</title>
+            <!-- Latest compiled and minified CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Latest compiled JavaScript -->
+            <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
     <body>
-        
+
         <!-- Container abrigará o logotipo do sistema -->
-        <div class="container-fluid text-center" style="margin-top: 30px;">
+         <div class="container-fluid text-center" style="margin-top: 30px;">
             <h1>Aqui ficará o logo do sistema</h1>
         </div>
 
@@ -27,13 +28,13 @@
               <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Início</a>
+                    <a class="nav-link active" href="index.html">Início</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="produtos.html">Produtos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="formLogin.html">Login</a>
+                    <a class="nav-link" href="formLogin.html">Login</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="carrinho.html">Carrinho</a>
@@ -47,28 +48,104 @@
             </div>
         </nav>
 
-        <!-- Container que abrigará o conteúdo da página -->
-
-        <div class="container text-center" style="margin-top: 30px; margin-bottom: 30px;">
-            <h1>Área de Acesso ao Sistema</h1>
-
-            <form action="#" method="post" class="was-validated">
-
-                <div class="form-floating mb-3 mt-3">
-                    <input type="email" class="form-control" name="emailUsuario" placeholder="Informe o Email" required>
-                    <label for="emailUsuario">Email</label>
-                </div>
-
-                <div class="form-floating mb-3 mt-3">
-                    <input type="password" class="form-control" name="senhaUsuario" placeholder="Informe a Senha" required>
-                    <label for="senhaUsuario">Senha</label>
-                </div>
-                
-                <button type="submit" name="btLogin" class="btn btn-primary">Login</button>
-                <a href="formCadastrar.html" class="btn btn-success">Cadastrar</a>
-            </form>
+        <!-- Carousel -->
+        <div class="container-fluid bg-dark text-center text-light pt-3 pb-3">
+            <h1>Promoções:</h1>
         </div>
 
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- O slideshow/carousel -->
+            <div class="carousel-inner border border-2">
+                <div class="carousel-item active">
+                    <img src="img/006.jpg" alt="Headset" class="d-block w-25 mx-auto mb-5">
+                    <div class="carousel-caption">
+                        <h3 class="text-dark">R$369,99</h3>
+                        <p class="text-dark">Headset Gamer Sem Fio HyperX Cloud Stinger Core</p>
+                    </div>
+                </div>  
+
+                <div class="carousel-item">
+                    <img src="img/007.jpg" alt="Gabinete" class="d-block w-25 mx-auto mb-5">
+                    <div class="carousel-caption">
+                        <h3 class="text-dark">R$1.129,99</h3>
+                        <p class="text-dark">Processador AMD Ryzen 7 5700X, 3.4GHz (4.6GHz Max Turbo)</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="img/008.jpg" alt="Mouse" class="d-block w-25 mx-auto mb-5">
+                    <div class="carousel-caption">
+                        <h3 class="text-dark">R$949,99</h3>
+                        <p class="text-dark">Mouse Sem Fio Gamer Logitech G PRO X Superlight</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles Direita e Esquerda -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Produtos -->
+
+        <div class="container bg-success text-center pt-3 pb-3 mt-5">
+            <h1>Produtos Novos:</h1>
+        </div>
+
+        <div class="row m-5" style="margin-top:30px;">
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/002.jpg" title='GTX 1660' alt="GTX 1660">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>R$2.349,91</b></h4>
+                        <p class="card-text"><b>PLACA VIDEO GIGABYTE GEFORCE GTX 1660 6GB GDDR5.</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/003.jpg" title='RTX 3060' alt="RTX 3060">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>R$2.120,00</b></h4>
+                        <p class="card-text"><b>PLACA VIDEO GIGABYTE NVIDIA GEFORCE RTX 3060 GAMING OC 24G.</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/005.jpg" title='Fonte Corsair' alt="Fonte Corsair">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>R$353,99</b></h4>
+                        <p class="card-text"><b>FONTE CORSAIR CV550, 550W, 80 PLUS BRONZE.</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/004.jpg" title='Teclado Mitra' alt="Teclado Mitra">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>R$301,91</b></h4>
+                        <p class="card-text"><b>TECLADO GAMER REDRAGON MECÂNICO MITRA.</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Rodapé da página -->
         <div class="container-fluid text-center fixed-bottom text-light " style="background-color: black;">
@@ -82,4 +159,5 @@
         </div>
 
     </body>
+
 </html>
